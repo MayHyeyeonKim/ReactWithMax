@@ -7,8 +7,8 @@ This repository contains my progress through the React course with Max.
 | Week       | Section Title                                                                 | Duration    | Goal                                                        | Status         |
 | :--------- | :---------------------------------------------------------------------------- | :---------- | :---------------------------------------------------------- | :------------- |
 | **Week 1** | Section 1: Getting Started                                                    | 42 min      | Learn the basics of setting up a React project.             | ✅ Done        |
-|            | Section 2: JavaScript Refresher                                               | 1 hr 42 min | Review core JavaScript concepts essential for React.        | 🔄 In Progress |
-|            | Section 3: React Essentials - Components, JSX, Props, State & More            | 2 hr 27 min | Understand fundamental React building blocks.               | ⏳ Pending     |
+|            | Section 2: JavaScript Refresher                                               | 1 hr 42 min | Review core JavaScript concepts essential for React.        | ✅ Done        |
+|            | Section 3: React Essentials - Components, JSX, Props, State & More            | 2 hr 27 min | Understand fundamental React building blocks.               | 🔄 In Progress |
 |            | Section 4: React Essentials - Deep Dive                                       | 3 hr 16 min | Explore advanced essential concepts in detail.              | ⏳ Pending     |
 |            | Section 5: React Essentials - Practice Project                                | 54 min      | Apply essentials to a small practice project.               | ⏳ Pending     |
 |            | Section 6: Styling React Components                                           | 1 hr 55 min | Learn various ways to style React components.               | ⏳ Pending     |
