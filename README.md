@@ -11,10 +11,10 @@ This repository contains my progress through the React course with Max.
 |            | Section 3: React Essentials - Components, JSX, Props, State & More            | 2 hr 27 min | Understand fundamental React building blocks.               | ✅ Done        |
 |            | Section 4: React Essentials - Deep Dive                                       | 3 hr 16 min | Explore advanced essential concepts in detail.              | ✅ Done        |
 |            | Section 5: React Essentials - Practice Project                                | 54 min      | Apply essentials to a small practice project.               | ✅ Done        |
-|            | Section 6: Styling React Components                                           | 1 hr 55 min | Learn various ways to style React components.               | 🔄 In Progress |
-|            | Section 7: Debugging React Apps                                               | 29 min      | Master techniques for debugging React applications.         | ⏳ Pending     |
-|            | Section 8: Working with Refs & Portals                                        | 1 hr 26 min | Understand how to use Refs and Portals.                     | ⏳ Pending     |
-|            | Section 9: Practice Project: Project Management App                           | 2 hr 4 min  | Build a more complex project using learned concepts.        | ⏳ Pending     |
+|            | Section 6: Styling React Components                                           | 1 hr 55 min | Learn various ways to style React components.               | ✅ Done        |
+|            | Section 7: Debugging React Apps                                               | 29 min      | Master techniques for debugging React applications.         | ✅ Done        |
+|            | Section 8: Working with Refs & Portals                                        | 1 hr 26 min | Understand how to use Refs and Portals.                     | 🔄 In Progress |
+|            | Section 9: Practice Project: Project Management App                           | 2 hr 4 min  | Build a more complex project using learned concepts.        | 🔄 In Progress |
 | **Week 2** | Section 10: React's Context API & useReducer - Advanced State Management      | 1 hr 19 min | Manage complex state with Context and useReducer.           | ⏳ Pending     |
 |            | Section 11: Handling Side Effects & Working with the useEffect() Hook         | 1 hr 21 min | Learn to use the useEffect hook for side effects.           | ⏳ Pending     |
 |            | Section 12: Practice Project: Building a Quiz App                             | 2 hr 1 min  | Build a quiz application to practice state management.      | ⏳ Pending     |
