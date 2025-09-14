@@ -1,13 +1,15 @@
 import { useState, useRef } from 'react';
 
 export default function Player() {
-  const playerName = useRef();
+  const playerName = useRef<HTMLInputElement>(null);
 
-  const [enteredPlayerName, setEnteredPlayerName] = useState(null);
+  const [enteredPlayerName, setEnteredPlayerName] = useState<string | null>(null);
 
   function handleClick() {
-    setEnteredPlayerName(playerName.current.value);
-    playerName.current.value = '';
+    if (playerName.current) {
+      setEnteredPlayerName(playerName.current.value);
+      playerName.current.value = '';
+    }
   }
 
   return (
