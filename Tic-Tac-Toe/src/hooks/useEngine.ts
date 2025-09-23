@@ -45,9 +45,15 @@ const useEngine = () => {
     return null;
   };
 
+  const calculateTie = (boardState: BoardState): boolean => {
+    return (
+      boardState.every((cell) => cell !== null) && !calculateWinner(boardState)
+    );
+  };
+
   const current = gameState.history[gameState.stepNumber];
   const winner = calculateWinner(current); // put current board state in the function
-
+  const tie = calculateTie(current);
   const isNext = gameState.stepNumber % 2 === 0; // true if X's turn, false if O's turn
 
   const handleButtonClick = (i: number) => {
@@ -60,10 +66,21 @@ const useEngine = () => {
 
     const newBoardState = [...boardState];
     newBoardState[i] = isNext ? "X" : "O";
-    history.push(newBoardState);
 
+    if (calculateTie(newBoardState)) {
+      console.log("It's a tie!");
+
+      history.push(newBoardState);
+      setGameState({
+        history,
+        stepNumber: history.length - 1,
+      });
+      return;
+    }
+
+    history.push(newBoardState);
     setGameState({
-      history: history,
+      history,
       stepNumber: history.length - 1,
     });
   };
@@ -86,6 +103,7 @@ const useEngine = () => {
     gameState,
     current,
     winner,
+    tie,
     isNext,
     handleButtonClick,
     jumpTo,

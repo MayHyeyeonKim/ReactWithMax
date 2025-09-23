@@ -7,6 +7,7 @@ export const Game = () => {
   const {
     current,
     winner,
+    tie,
     gameState,
     isNext,
     handleButtonClick,
@@ -58,6 +59,20 @@ export const Game = () => {
                 fontWeight: "bold",
                 py: 2,
                 px: 3,
+              }}
+            />
+          ) : tie ? (
+            <Chip
+              label="It's a Tie!"
+              color="warning"
+              size="medium"
+              sx={{
+                fontSize: "1.2rem",
+                fontWeight: "bold",
+                py: 2,
+                px: 3,
+                backgroundColor: "#FF9800",
+                color: "white",
               }}
             />
           ) : (
