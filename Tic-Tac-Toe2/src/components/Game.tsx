@@ -17,8 +17,12 @@ const Game = () => {
 
   console.log("gameState: ", gameState);
 
+  const [size, setSize] = useState<number>(5);
+
+  console.log("setSize", setSize);
+
   const [board, setBoard] = useState<Array<"X" | "O" | null>>(
-    Array(9).fill(null)
+    Array(size * size).fill(null)
   );
 
   const [currentPlayer, setCurrentPlayer] = useState<"X" | "O">("X");
@@ -55,8 +59,8 @@ const Game = () => {
     setIsEditMode(true);
   };
 
-  const winner = useMemo(() => calculateWinner(board), [board]);
-  const tie = useMemo(() => calculateTie(board), [board]);
+  const winner = useMemo(() => calculateWinner(size, board), [size, board]);
+  const tie = useMemo(() => calculateTie(size, board), [size, board]);
   const isNext = currentPlayer === "X";
 
   const jumpTo = (index: number) => {
@@ -167,7 +171,7 @@ const Game = () => {
               justifyContent="center"
               sx={{ mt: 2 }}
             >
-              <Board board={board} onClick={handleClick} />
+              <Board size={size} board={board} onClick={handleClick} />
               <Log
                 onReset={handleReset}
                 gameState={gameState}

@@ -18,17 +18,29 @@ const useEngine = () => {
   console.log(setGameState);
 
   const calculateWinner = (boardState: BoardState): Player => {
-    const winningCombinations = [
-      [0, 1, 2],
-      [3, 4, 5],
-      [6, 7, 8], // rows
-      [0, 3, 6],
-      [1, 4, 7],
-      [2, 5, 8], // columns
-      [0, 4, 8],
-      [2, 4, 6],
-      [2, 5, 8], // diagonals
-    ];
+    const size = 5;
+
+    const winningCombinations = [];
+    for (let i = 0; i < size; i++) {
+      const row = [];
+      const col = [];
+      for (let j = 0; j < size; j++) {
+        row.push(i * size + j);
+        col.push(i + size * j);
+      }
+      winningCombinations.push(row, col);
+
+      // winningCombinations.push([i * size, i * size + 1, i * size + 2]); // rows
+      // winningCombinations.push([i, i + size, i + size * 2]); // columns
+    }
+
+    const diagonal1 = [];
+    const diagonal2 = [];
+    for (let j = 0; j < size; j++) {
+      diagonal1.push(j * (size + 1));
+      diagonal2.push((j + 1) * (size - 1));
+    }
+    winningCombinations.push(diagonal1, diagonal2);
 
     for (let i = 0; i < winningCombinations.length; i++) {
       const [a, b, c] = winningCombinations[i];
