@@ -16,7 +16,7 @@ This repository contains my progress through the React course with Max.
 |            | Section 8: Working with Refs & Portals                                        | 1 hr 26 min | Understand how to use Refs and Portals.                     | ✅ Done        |
 |            | Section 9: Practice Project: Project Management App                           | 2 hr 4 min  | Build a more complex project using learned concepts.        | ✅ Done        |
 | **Week 2** | Section 10: React's Context API & useReducer - Advanced State Management      | 1 hr 19 min | Manage complex state with Context and useReducer.           | 🔄 In Progress |
-|            | Section 11: Handling Side Effects & Working with the useEffect() Hook         | 1 hr 21 min | Learn to use the useEffect hook for side effects.           | ⏳ Pending     |
+|            | Section 11: Handling Side Effects & Working with the useEffect() Hook         | 1 hr 21 min | Learn to use the useEffect hook for side effects.           | 🔄 In Progress |
 |            | Section 12: Practice Project: Building a Quiz App                             | 2 hr 1 min  | Build a quiz application to practice state management.      | ⏳ Pending     |
 |            | Section 13: A Look Behind The Scenes Of React & Optimization Techniques       | 1 hr 21 min | Understand React's inner workings and optimize performance. | ⏳ Pending     |
 |            | Section 14: An Alternative Way Of Building Components: Class-based Components | 1 hr        | Learn to create components using the class syntax.          | ⏳ Pending     |

@@ -45,8 +45,8 @@ const calculateWinner = (size: number, board: BoardState): Player => {
     const row: number[] = [];
     const col: number[] = [];
     for (let c = 0; c < size; c++) {
-      row.push(r * size + c); // r번째 행의 인덱스
-      col.push(c * size + r); // r번째 열의 인덱스
+      row.push(r * size + c); 
+      col.push(c * size + r); 
     }
     combos.push(row, col);
   }
