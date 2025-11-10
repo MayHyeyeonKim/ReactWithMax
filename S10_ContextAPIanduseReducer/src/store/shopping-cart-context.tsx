@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import type { CartState, CartAction } from "./shoppingCartReducer";
 
-interface CartContextType {
+export interface CartContextType {
   state: CartState;
   dispatch: (action: CartAction) => void;
 }

@@ -2,12 +2,14 @@ import { useContext } from "react";
 import { Typography, IconButton, Badge, Box } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import CartContext from "../store/shopping-cart-context";
+import type { CartItem } from "../store/shoppingCartReducer";
 
 const Header = () => {
   const context = useContext(CartContext);
-  const { state } = context;
+  const { state } = context!;
+
   const itemCount = state.items.reduce(
-    (total, item) => total + item.quantity,
+    (total: number, item: CartItem) => total + item.quantity,
     0
   );
 
