@@ -67,6 +67,7 @@ const Product = ({ id, image, title, price, description }: ProductProps) => {
           variant="contained"
           fullWidth
           onClick={addToCartHandler}
+          sx={{ textTransform: "none" }}
         >
           Add to Cart
         </Button>
