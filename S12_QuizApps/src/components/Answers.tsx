@@ -7,16 +7,12 @@ interface AnswersProps {
   onSelect: (answer: string) => void;
 }
 
-const Answers = ({
-  answers,
-  selectedAnswer,
-  answerState,
-  onSelect,
-}: AnswersProps) => {
+const Answers = ({ answers, selectedAnswer, answerState, onSelect }: AnswersProps) => {
   const shuffledAnswers = useRef<string[]>([]);
 
   if (shuffledAnswers.current.length === 0) {
     shuffledAnswers.current = [...answers];
+    // Math.random has known issues but is sufficient for this use case
     shuffledAnswers.current.sort(() => Math.random() - 0.5);
   }
 
@@ -30,20 +26,13 @@ const Answers = ({
           cssClass = "selected";
         }
 
-        if (
-          (answerState === "correct" || answerState === "wrong") &&
-          isSelected
-        ) {
+        if ((answerState === "correct" || answerState === "wrong") && isSelected) {
           cssClass = answerState;
         }
 
         return (
           <li key={answer} className="answer">
-            <button
-              onClick={() => onSelect(answer)}
-              className={cssClass}
-              disabled={answerState !== ""}
-            >
+            <button onClick={() => onSelect(answer)} className={cssClass} disabled={answerState !== ""}>
               {answer}
             </button>
           </li>
